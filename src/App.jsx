@@ -1,5 +1,5 @@
 import './App.css'
-import {WindowsManga} from './components/Manga.jsx'
+import { WindowsManga } from './components/Manga/Manga.jsx'
 
 function App() {
 
