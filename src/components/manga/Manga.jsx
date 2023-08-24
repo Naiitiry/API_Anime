@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { useFetch } from "../../Apilink/useFetch";
 import { MangaListado } from "./MangaList.jsx";
+import './Manga.css'
 
 const WindowsManga = () =>{
     const {data:mangaData,loading:mangaLoading,error:mangaError} = useFetch(`https://kitsu.io/api/edge/manga/`)
-    console.log(mangaData);
     if(mangaLoading){
         return <div>Cargando manga data . . .</div>
     }
@@ -13,8 +13,8 @@ const WindowsManga = () =>{
     }
     return(
         <>
-            <h2>Mangas</h2>
-            <div>
+            <h2 className="manga-title">Mangas</h2>
+            <div className="manga-grid">
                 {mangaData && (
                     <MangaListado dataManga={mangaData}/>
                 )}

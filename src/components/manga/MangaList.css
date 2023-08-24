@@ -1,5 +1,22 @@
 .manga-list{
     list-style: none;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    gap: 20px;
+}
+.manga-list-individual{
     display: flex;
-    
+    flex-direction: column;
+    text-align: center;
+    width: 300px;   
+}
+.manga-list-individual-img-container{
+    width: 300px;
+}
+.manga-list-individual-img{
+    width: 100%;
+    height: auto;
+}
+.manga-list-canon-title{
+    color: #fff;
 }
